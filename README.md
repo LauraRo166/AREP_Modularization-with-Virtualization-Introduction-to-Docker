@@ -326,7 +326,7 @@ To run the tests:
 
 Should look something like this:
 
-{Imagen tests}
+<img width="921" height="280" alt="image" src="https://github.com/user-attachments/assets/57066d6e-1135-4070-a1b5-17a625f6804e" />
 
 ---
 ## 🎥 Videos
