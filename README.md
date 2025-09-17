@@ -44,13 +44,13 @@ containerization, image publishing, and cloud deployment of Java applications.
    http://localhost:5000/
    ```
 
-{Imagen puerto 500}
+<img width="921" height="464" alt="image" src="https://github.com/user-attachments/assets/7785bf5f-f155-48ac-aa84-46a25d20c117" />
 
 ---
 
 ## 🏗️ Architecture
 
-{Imagen Arquitectura}
+<img width="991" height="501" alt="Arquitectura" src="https://github.com/user-attachments/assets/75528f88-9c03-4302-b5be-9a7cf7858360" />
 
 The system is deployed on an Amazon EC2 virtual machine and encapsulated within a Docker container, ensuring portability and ease of deployment.
 
@@ -75,7 +75,7 @@ The RestController processes business logic requests and uses Annotations to rou
 ---
 ## 🧩 Class Diagram
 
-{Imagen diagramas de clases}
+<img width="802" height="1141" alt="DiagramaClases" src="https://github.com/user-attachments/assets/2dc27950-8d28-4374-9b96-9b0ad84988f0" />
 
 ---
 ## 🔌Concurrency and Graceful Shutdown 
@@ -248,7 +248,8 @@ We build the image with the command
 ```bash
 docker build --tag dockeraws .
 ```
-{Construccion Imagen}
+
+<img width="921" height="392" alt="image" src="https://github.com/user-attachments/assets/e8dfd0b0-1840-42fc-9976-a9b59ae1c9d2" />
 
 From the image created, create three instances of a docker container.
 ```bash
@@ -257,13 +258,14 @@ docker run -d -p 34001:6000 --name firstdockercontainer2 dockeraws
 docker run -d -p 34002:6000 --name firstdockercontainer3 dockeraws
 ```
 
-{prueba docker 3}
+<img width="921" height="143" alt="image" src="https://github.com/user-attachments/assets/75939a82-a547-4855-913f-b9ce94533b2a" />
 
 We can verify its correct creation with
 ```bash
 docker ps .
 ```
-{Imagen docker ps 3}
+
+<img width="921" height="152" alt="image" src="https://github.com/user-attachments/assets/38b40e9a-859f-4cf9-a532-950c10d8f7ee" />
 
 And we can test by accessing to
 ```
@@ -273,11 +275,12 @@ We run docker compose with
 ```bash
 docker-compose up -d
 ```
-{Imagen docker compose}
+
+<img width="921" height="812" alt="image" src="https://github.com/user-attachments/assets/14251f8b-3bea-491b-af13-813ab8ca67e5" />
 
 A repository is created on DockerHub.
 
-{DockerHub}
+<img width="921" height="180" alt="image" src="https://github.com/user-attachments/assets/a709dcf0-6685-472b-866a-e0db84ee0b69" />
 
 and we execute:
 ```bash
@@ -286,9 +289,10 @@ docker login
 docker push lauraro/arep20252:latest
 ```
 
-{push tag}
+<img width="921" height="514" alt="image" src="https://github.com/user-attachments/assets/f977a4c0-2e85-4be8-8e7a-31d5982e8c19" />
 
-{tag repo}
+
+<img width="921" height="438" alt="image" src="https://github.com/user-attachments/assets/48ca1256-6150-446c-b60a-756bb814c2e0" />
 
 Now we create the EC2 instance in AWS, access the machine and run:
 ```bash
@@ -329,7 +333,9 @@ Should look something like this:
 
 The video contains evidence of the correct operation of the Docker container deployment locally and on AWS.
 
-[![Mira el video en YouTube](https://img.youtube.com/vi/ag_pscokff0/hqdefault.jpg)](https://www.youtube.com/watch?v=ag_pscokff0)
+**Link**: https://www.youtube.com/watch?v=ag_pscokff0
+
+[![TestingVideo](https://img.youtube.com/vi/ag_pscokff0/hqdefault.jpg)](https://www.youtube.com/watch?v=ag_pscokff0)
 
 ---
 
